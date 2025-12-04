@@ -242,8 +242,17 @@ p {
   background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
   border-radius: 50%;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   animation: float 6s ease-in-out infinite;
-  opacity: 0.1;
+}
+
+.hero-decoration > img{
+  width: 99%;
+  height: 99%;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .scroll-indicator {
@@ -318,6 +327,9 @@ section {
 }
 
 .section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   margin-bottom: var(--spacing-2xl);
 }
@@ -455,6 +467,12 @@ section {
   margin-bottom: var(--spacing-md);
 }
 
+.skill-icon > img{
+  width: 32px;
+  height: 32px;
+  color: var(--white);
+}
+
 .skill-icon svg {
   width: 32px;
   height: 32px;
@@ -531,6 +549,7 @@ section {
 
 .project-overlay {
   position: absolute;
+  gap: var(--spacing-md);
   top: 0;
   left: 0;
   right: 0;
@@ -556,6 +575,11 @@ section {
   align-items: center;
   justify-content: center;
   transition: var(--transition);
+}
+.project-link > img{
+  width: 40px;
+  height: 40px;
+  color: var(--primary);
 }
 
 .project-link:hover {
